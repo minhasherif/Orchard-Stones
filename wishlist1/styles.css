@@ -1,0 +1,126 @@
+body {
+  font-family: Playfair Display;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: white;
+  color: #333;
+  text-align: center;
+  padding: 1rem 0;
+  position: relative;
+}
+
+
+h1 {
+  margin: 0;
+}
+/*
+.header-line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%; /* Full width */
+ /* height: 1px; /* Thickness of the line */
+ /* background-color: #333; /* Color of the line 
+}*/
+/*
+#wishlist-container {
+ /* display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  display: grid;
+  
+  max-width: 200px; /* Adjust the maximum width as needed 
+  margin: 0 auto;  Center the container 
+  padding: 2rem;
+*/
+#wishlist-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 items per row */
+  gap: 0px 10px;
+ /* justify-content: space-between;*/
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.wishlist-item {
+  
+  /*width: calc(25% - 20px); /* 4 items in a row */
+  width: 100%;
+  margin-bottom: 2rem;
+ /* border: 1px solid #ddd;*/
+  box-sizing: border-box; /* Include padding in width calculation */
+  position: relative;
+  overflow: hidden; /* Ensure images don't overflow */
+  background-color: rgba(255, 255, 255, 0.8); 
+  
+}
+
+.wishlist-item img {
+  width: 100%; /* Set image width to 100% of parent container */
+  height: 200px; /* Maintain aspect ratio */
+  display: block;
+  object-fit: cover;
+}
+
+
+
+
+
+
+.wishlist-item h2 {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  bottom: 15px;
+  right: 5px;
+}
+
+
+.add-to-cart-btn{
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  background-color: transparent;
+  color: #333;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+.remove-from-wishlist-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  color: #333;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  
+}
+
+
+.add-to-cart-btn:hover{
+  color:black;
+}
+.remove-from-wishlist-btn:hover {
+  color: red;
+}
+/*
+.item-details {
+  padding: 0.5rem;
+}
+
+.item-details h2 {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+}
+.rate {
+  margin-top: 0.2rem;
+  font-size: 1rem;
+}
+
+*/
